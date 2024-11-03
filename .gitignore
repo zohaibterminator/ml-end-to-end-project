@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# data shouldn't be pushed
+transformed_data.pkl
+
 # C extensions
 *.so
 
