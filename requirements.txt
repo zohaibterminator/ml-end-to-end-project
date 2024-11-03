@@ -1,9 +1,5 @@
 fastapi
 xgboost
-optuna
 pandas
 numpy
-gunicorn
-streamlit
 dill
-kagglehub
