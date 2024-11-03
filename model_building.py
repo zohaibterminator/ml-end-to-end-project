@@ -1,14 +1,14 @@
 from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
-from zohaibsaqibDS7_Green_data_cleaning import main
+from data_cleaning import main
 from sklearn.metrics import classification_report
 import pandas as pd
-import pickle
+import dill
 
 # Load the data from the pickle file
 def load_data():
     with open("transformed_data.pkl", "rb") as f:
-        X_train, X_test, y_train, y_test = pickle.load(f)
+        X_train, X_test, y_train, y_test = dill.load(f)
 
     return X_train, y_train, X_test, y_test
 
