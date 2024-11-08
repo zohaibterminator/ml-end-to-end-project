@@ -1,5 +1,4 @@
 fastapi
-xgboost
 pandas
 numpy
 dill
