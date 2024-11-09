@@ -1,12 +1,13 @@
-import pickle
+import dill
+import pandas as pd
 
 def save_model(model):
     with open("model.pkl", "wb") as f:
-        pickle.dump(model, f)
+        dill.dump(model, f)
 
 
 def load_model():
     with open("xgboost_model.pkl", "rb") as f:
-        model = pickle.load(f)
+        model = dill.load(f)
 
     return model
