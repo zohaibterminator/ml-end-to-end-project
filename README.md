@@ -14,11 +14,11 @@ Ensure you have the following installed on your machine:
 
 ```plaintext
 .
-├── 1. Data Cleaning/data_cleaning.py                                # Data cleaning and preprocessing pipeline
-├── 2. Model Building/model_building.py                              # Model training and saving
-├── 3. Model Saving/model_load_save.py                               # Model saving and loading script
-├── 4. FastAPI Endpoint for the model/api.py                         # FastAPI application
-├── 5. Deployment on HF with Streamlit UIapp.py                      # Streamlit frontend
+├── 1. data_cleaning.py                                              # Data cleaning and preprocessing pipeline
+├── 2. model_building.py                                             # Model training and saving
+├── 3. model_load_save.py                                            # Model saving and loading script
+├── 4. api.py                                                        # FastAPI application
+├── 5. app.py                                                        # Streamlit frontend
 ├── requirements.txt                                                 # Dependencies
 ├── model_load_save.py                                               # Utilities for loading model and preprocessing components
 └── README.md                                                        # Documentation
@@ -72,7 +72,7 @@ uvicorn api:app --host 0.0.0.0 --port 8000
 python data_cleaning_pipeline.py
 ```
 
-### 4. Run the Streamlit Frontend
+#### 4. Run the Streamlit Frontend
 
 * To start the Streamlit app, run:
 
